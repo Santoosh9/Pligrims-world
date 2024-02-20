@@ -28,20 +28,7 @@
 .slider-area{
     margin-top: -1px;
     .hero__caption{
-        & h2{
-            color: #fff;
-                font-size: 60px;
-                line-height: 4.2;
-                font-weight: 600;
-                margin-bottom: 30px;
-                font-family: $font_1;
-                
-            
-                @media #{$xs} {
-                    margin-bottom: 20px;
-                }
-
-        }
+      
         & p{
             color: #fff;
             font-size: 30px;
