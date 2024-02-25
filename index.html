@@ -23,7 +23,7 @@
             <link rel="stylesheet" href="assets/css/style.css">
    </head>
 
-   <body>
+   <body id="">
     <!-- Preloader Start -->
     <div id="preloader-active">
         <div class="preloader d-flex align-items-center justify-content-center">
@@ -39,32 +39,8 @@
     <header>
         <!-- Header Start -->
        <div class="header-area">
-            <div class="main-header ">
-                <div class="header-top top-bg d-none d-lg-block">
-                   <div class="container">
-                    <div class="row justify-content-between align-items-center">
-                        <div class="col-lg-8">
-                            <div class="header-info-left">
-                            <ul>
-                                <li>pligrimsholidays.com</li>
-                                <li>9800000980</li>
-                                <li>Jamal Kathmandu</li>
-                            </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="header-info-right f-right">
-                                <ul class="header-social">    
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                   
-                                </ul>
-                            </div>
-                        </div>
-                       </div>
-                   </div>
-                </div>
+            <div class="main-header">
+                
                <div class="header-bottom  header-sticky">
                     <div class="container">
                         <div class="row align-items-center">
@@ -76,12 +52,12 @@
                             </div>
                             <div class="col-xl-10 col-lg-10 col-md-10">
                                 <!-- Main-menu -->
-                                <div class="main-menu f-right d-none d-lg-block">
+                                <div class="main-menu f-right d-none d-lg-block font">
                                     <nav>               
                                         <ul id="navigation">                                                                                                                                     
                                             <li><a href="index.html">Home</a>
                                             </li>
-                                            <li><a href="about.html">About US</a>
+                                            <li><a href="about.html">About US  <img src="/assets//img//logo//down-arrow.png" style="font-size: x-small; width: 15px;"></a>
                                                 <ul class="submenu">
                                                     <li><a href="">Company Info</a></li>
                                                     <li><a href="">Chairman & CEO Message</a></li>
@@ -91,12 +67,24 @@
                                                     <li><a href="">Team Member</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="packages.html">Packages</a>
+                                            <li><a href="packages.html">Packages <img src="/assets//img//logo//down-arrow.png" style="font-size: x-small; width: 15px;" /></a>
                                             <ul class="submenu">
                                                 <li><a href="blog.html">Domestic Packages</a></li>
                                                 <li><a href="">International Packages </a></li>
-                                                <li><a href="">Inboound Packges </a></li>
+                                                <li><a href="">Inbound Packges </a></li>
                                             </ul>
+                                            </li>
+
+                                            <li><a href="">Services  <img src="/assets//img//logo//down-arrow.png" style="font-size: x-small; width: 15px;"/></a>
+                                                <ul class="submenu">
+                                                <li><a href="">Domestic & International Packages</a></li>
+                                                <li><a href="">Domestic & International Air Ticketing</a></li>
+                                                 <li><a href="">Domestic & International Car Rental</a></li>
+                                                <li><a href="">Domestic & International Hotel Booking</a></li>
+                                                <li><a href="">Visa &  Other Travel Services </a></li>
+                                                <li><a href="">Meeting/Conference/Incentives & Exhibitions </a></li>
+                                                    
+                                                </ul>
                                             </li>
                                             <li><a href="blog.html">Blog</a>
                                             
@@ -126,7 +114,7 @@
         <div class="slider-area ">
             <!-- Mobile Menu -->
             <div class="slider-active">
-                <div class="single-slider hero-overly  slider-height d-flex align-items-center" data-background="assets/img/hero/h1_hero.jpg">
+                <div class="single-slider hero-overly  slider-height d-flex align-items-center" data-background="assets/img/hero/nepal.jpg">
                     <div class="container">
                         <div class="row">
                             <div class="col-xl-9 col-lg-9 col-md-9">
@@ -147,11 +135,10 @@
                                     </div>
                                     <div class="select-form mb-30">
                                         <div class="select-itms">
-                                            <select name="select" id="select1">
+                                            <select name="select" id="select1" onchange="redirectToDestination()">
                                                 <option value="">When</option>
-                                                <option value="">Inside Nepal</option>
-                                                <option value="">International Travels</option>
-                                                
+                                                <option value="blog.html">Inside Nepal</option>
+                                                <option value="blog.html">International Travels</option>
                                             </select>
                                         </div>
                                     </div>
@@ -221,7 +208,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="section-tittle text-center">
-                            <span>FEATURED TOURS Packages</span>
+                            <span>FEATURED TOURS  PACKAGES</span>
                             <h2>Favourite Places</h2>
                         </div>
                     </div>
@@ -230,12 +217,12 @@
                     <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="single-place mb-30">
                             <div class="place-img">
-                                <img src="assets/img/service/services1.jpg" alt="">
+                                <img src="assets/img/service/backpacker-deogyusan-mountains-winter.jpg" alt="">
                             </div>
                             <div class="place-cap">
                                 <div class="place-cap-top">
                                     <span><i class="fas fa-star"></i><span>8.0 Superb</span> </span>
-                                    <h3><a href="#">The Dark Forest Adventure</a></h3>
+                                    <h3><a href="#">mountain during sunrise</a></h3>
                                     <p class="dolor">$1870 <span>/ Per Person</span></p>
                                 </div>
                                 <div class="place-cap-bottom">
@@ -250,12 +237,12 @@
                     <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="single-place mb-30">
                             <div class="place-img">
-                                <img src="assets/img/service/services2.jpg" alt="">
+                                <img src="assets/img/service/assorted-color-flags-mountain-during-sunrise.jpg" alt="">
                             </div>
                             <div class="place-cap">
                                 <div class="place-cap-top">
                                     <span><i class="fas fa-star"></i><span>8.0 Superb</span> </span>
-                                    <h3><a href="#">The Dark Forest Adventure</a></h3>
+                                    <h3><a href="#">Shot of the isthmus peak and a lake in new zealand</a></h3>
                                     <p class="dolor">$1870 <span>/ Per Person</span></p>
                                 </div>
                                 <div class="place-cap-bottom">
@@ -270,12 +257,12 @@
                     <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="single-place mb-30">
                             <div class="place-img">
-                                <img src="assets/img/service/services3.jpg" alt="">
+                                <img src="assets/img/service/indian-travel-destination-beautiful-attractive.jpg" alt="">
                             </div>
                             <div class="place-cap">
                                 <div class="place-cap-top">
                                     <span><i class="fas fa-star"></i><span>8.0 Superb</span> </span>
-                                    <h3><a href="#">The Dark Forest Adventure</a></h3>
+                                    <h3><a href="#">Deogyusan mountains in winter</a></h3>
                                     <p class="dolor">$1870 <span>/ Per Person</span></p>
                                 </div>
                                 <div class="place-cap-bottom">
@@ -290,7 +277,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="single-place mb-30">
                             <div class="place-img">
-                                <img src="assets/img/service/services4.jpg" alt="">
+                                <img src="assets/img/service/shot-isthmus-peak-lake-new-zealand.jpg" alt="">
                             </div>
                             <div class="place-cap">
                                 <div class="place-cap-top">
@@ -352,7 +339,7 @@
         </div>
         <!-- Favourite Places End -->
         <!-- Video Start Arera -->
-        <div class="video-area video-bg pt-200 pb-200"  data-background="assets/img/service/video-bg.jpg">
+        <div class="video-area video-bg pt-200 pb-200"  data-background="assets/img/service/vc.jpg">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12">
@@ -654,6 +641,16 @@
 		<!-- Jquery Plugins, main Jquery -->	
         <script src="./assets/js/plugins.js"></script>
         <script src="./assets/js/main.js"></script>
+
+        <script>
+            function redirectToDestination() {
+                var selectElement = document.getElementById("select1");
+                var selectedValue = selectElement.options[selectElement.selectedIndex].value;
+                if (selectedValue !== "") {
+                    window.location.href = selectedValue;
+                }
+            }
+        </script>
         
     </body>
 </html>

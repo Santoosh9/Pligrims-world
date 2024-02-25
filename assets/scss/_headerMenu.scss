@@ -144,19 +144,13 @@
                             color:$theme-color;
                             background: none;
                         }
-                        & i{
-                            // @include transition(.4s);
-                        }
+                       
                     }
                 } 
             }
         }
     }
-    .logo{
-        & img{
-            
-        }
-    }
+  
 }
 
 .header-area .header-top .header-info-right .header-social a i {
