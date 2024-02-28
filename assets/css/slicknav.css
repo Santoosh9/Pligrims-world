@@ -44,6 +44,11 @@
 .slicknav_menu .slicknav_no-text {
   margin: 0;
 }
+
+.navbtn {
+  display: flex;
+  gap: 6px;
+}
 .slicknav_menu .slicknav_icon-bar {
   display: block;
   width: 1.125em;
@@ -59,6 +64,12 @@
   clear: both;
 }
 
+.slicknav_menu:after {
+  content: ' ';
+  display: table;
+  clear: both;
+}
+
 .slicknav_nav {
   clear: both;
 }
@@ -68,7 +79,7 @@
 .slicknav_nav li {
   display: block;
 }
-.slicknav_nav .slicknav_arrow {
+.slicknav_nav .slicknav_nav .slicknav_arrow {
   font-size: 0.8em;
   margin: 0 0 0 0.4em;
 }
@@ -87,7 +98,9 @@
 .slicknav_nav .slicknav_parent-link a {
   display: inline;
 }
-
+.slicknav_nav span {
+  margin-left: 17px;
+}
 .slicknav_brand {
   float: left;
 }
