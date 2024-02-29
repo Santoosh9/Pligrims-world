@@ -1,11 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <title>Document</title>
+    <!-- CSS here -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../assets/css/flaticon.css">
+    <link rel="stylesheet" href="../assets/css/slicknav.css">
+    <link rel="stylesheet" href="../assets/css/animate.min.css">
+    <link rel="stylesheet" href="../assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="../assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../assets/css/themify-icons.css">
+    <link rel="stylesheet" href="../assets/css/slick.css">
+    <link rel="stylesheet" href="../assets/css/nice-select.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-iRbqi3sU2tv05VQDyMuI/Cz9aYl1q20RJW/3acHD8xELp2Wfv5XmXmrJdmf3Tr8sIsioLgNkIZ2ZTqgC93tpYg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+
+        .main {
+            font-family: Poppins, sans-serif;
+
+        }
+
+        .button-like {
+            display: inline-block;
+            background-color: hsl(0, 100%, 50%);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 22px;
+            border: none;
+            cursor: pointer;
+            height: 30px;
+            width: 80px;
+            font-family: Poppins, sans-serif;
+            text-overflow: hidden;
+            text-align: center;
+
+        }
+
+        .button-like:hover {
+            background-color: #0056b3;
+        }
+
+ 
+.ceo-message-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.ceo-message {
+    display: flex;
+    align-items: center;
+}
+
+.ceo-image {
+    flex: 0 0 30%;
+    max-width: 30%;
+    text-align: center;
+}
+
+.ceo-image img {
+  
+    max-width: 100%;
+   
+    border-radius: 60%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.ceo-content {
+    flex: 0 0 70%;
+    max-width: 70%;
+    padding-left: 40px;
+}
+
+.ceo-content h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.ceo-content p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .ceo-message {
+        flex-direction: column;
+    }
+
+    .ceo-image,
+    .ceo-content {
+        max-width: 100%;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .ceo-image {
+        margin-bottom: 20px;
+    }
+}
+    </style>
+
+
 </head>
+
 <body>
+
+    <header>
+        <div class="header-area">
+            <div class="main-header">
+
+                <div class="header-bottom  header-sticky">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <!-- Logo -->
+                            <div class="col-xl-2 col-lg-2 col-md-1">
+                                <div class="logo">
+                                    <a href="../index.html"><img src="../assets/img/logo/logo.png" alt="" width="220"
+                                            height="60"></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-10 col-lg-10 col-md-10">
+                                <!-- Main-menu -->
+                                <div class="main-menu f-right d-none d-lg-block font">
+                                    <nav style="display: flex;">
+                                        <ul id="navigation">
+                                            <li><a href="../index.html">Home</a>
+                                            </li>
+                                            <li><a href="../about.html">About US <img
+                                                        src="/assets//img//logo//down-arrow.png"
+                                                        style="font-size: x-small; width: 10px;"></a>
+                                                <ul class="submenu">
+                                                    <li><a href="./companyinfo.html">Company Info</a></li>
+                                                    <li><a href="./chairmanmessage.html">Chairman & CEO Message</a></li>
+                                                    <li><a href="./bod.html">Board of Director</a></li>
+                                                    <li><a href="./managementteam.html">Management Team</a></li>
+                                                    <li><a href="./foundingteam.html">Fonding Team</a></li>
+                                                    <li><a href="./teammember.html">Team Member</a></li>
+                                                    <li><a href="./whyus.html">Why Choose US</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="../packages.html">Packages <img
+                                                        src="/assets//img//logo//down-arrow.png"
+                                                        style="font-size: x-small; width: 10px;" /></a>
+                                                <ul class="submenu">
+                                                    <li><a href="./domesticpackage.html">Domestic Packages</a></li>
+                                                    <li><a href="./internationalpackage.html">International Packages
+                                                        </a></li>
+                                                    <li><a href="./inbound.html">Inbound Packges </a></li>
+                                                </ul>
+                                            </li>
+
+                                            <li><a href="../services.html">Services <img
+                                                        src="/assets//img//logo//down-arrow.png"
+                                                        style="font-size: x-small; width: 10px;" /></a>
+                                                <ul class="submenu">
+                                                    <li><a href="./allpackage.html">Domestic & International
+                                                            Packages</a></li>
+                                                    <li><a href="./airticket.html">Domestic & International Air
+                                                            Ticketing</a></li>
+                                                    <li><a href="./carrental.html">Domestic & International Car
+                                                            Rental</a></li>
+                                                    <li><a href="./hotelbooking.html">Domestic & International Hotel
+                                                            Booking</a></li>
+                                                    <li><a href="./visaandother.html">Visa & Other Travel Services </a>
+                                                    </li>
+                                                    <li><a href="./meeting.html">Meeting/Conference/Incentives &
+                                                            Exhibitions </a></li>
+
+                                                </ul>
+                                            </li>
+                                            <li><a href="../blog.html">Blog</a>
+
+
+
+
+                                            <li><a href="../contact.html">Contact Us</a></li>
+
+
+
+
+                                            <span class="button-like" href="./layout//login.html"> Sign In</span>
+
+                                            <span class="button-like" href="./layout//register.html"> Sign Up</span>
+
+                                        </ul>
+
+                                    </nav>
+                                </div>
+                            </div>
+                            <!-- Mobile Menu -->
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<div class="ceo-message-section">
+    <div class="container">
+        <div class="ceo-message">
+            <div class="ceo-image">
+                <img src="../assets/img/gallery/3.png" alt="CEO Image">
+            </div>
+            <div class="ceo-content">
+            <h2>Message from our Chairman</h2>
+            
+            <p>Welcome to <span style="color: red;">Pligrims Holidays</span></p>
+            <p><span style="color: red; height: 50px;">"</span>As the CEO of Pligrims Holidays, it gives me great
+                pleasure to extend a warm welcome
+                to all our customers, partners, and stakeholders. <span style="color: red; height: 50px;">"</span></p>
+            <p>At Pligrims Holidays, we are committed to providing exceptional travel experiences, tailored
+                to meet the diverse needs and preferences of our clients. Whether you're planning a leisurely
+                vacation, a corporate retreat, or an adventurous expedition, our dedicated team is here to
+                assist you every step of the way. With our extensive network of partners and suppliers, we strive to offer the best
+                deals on
+                flights, accommodations, transportation, and tour packages. Our focus on quality, reliability,
+                and customer satisfaction sets us apart as a leader in the travel industry. Thank you for choosing Pligrims Holidays
+                for your travel needs. We look forward to serving
+                you and making your travel dreams a reality.</p>
+            
+            <p>Warm regards,</p>
+            <p>Chairman<br>Pligrims Holidays</p>
+            </div>
+        </div>
+
+    <div class="ceo-message">
+        <div class="ceo-image">
+            <img src="../assets/img/gallery/3.png" alt="CEO Image">
+        </div>
+        <div class="ceo-content" style="margin-top: 60px;">
+            <h2>Message from our CEO</h2>
     
+            <p>Welcome to <span style="color: red;">Pligrims Holidays</span></p>
+            <p><span style="color: red; height: 50px;">"</span>As the CEO of Pligrims Holidays, it gives me great
+                pleasure to extend a warm welcome
+                to all our customers, partners, and stakeholders. <span style="color: red; height: 50px;">"</span></p>
+            <p>At Pligrims Holidays, we are committed to providing exceptional travel experiences, tailored
+                to meet the diverse needs and preferences of our clients. Whether you're planning a leisurely
+                vacation, a corporate retreat, or an adventurous expedition, our dedicated team is here to
+                assist you every step of the way. With our extensive network of partners and suppliers, we strive to offer the best deals on
+                flights, accommodations, transportation, and tour packages. Our focus on quality, reliability,
+                and customer satisfaction sets us apart as a leader in the travel industry. Thank you for choosing Pligrims Holidays for your travel needs. We look forward to serving
+                you and making your travel dreams a reality.</p>
+            
+            <p>Warm regards,</p>
+            <p>Chairman<br>Pligrims Holidays</p>
+        </div>
+    </div>
+    </div>
+</div>
+
+    <footer>
+        <!-- Footer Start-->
+        <div class="footer-area footer-padding footer-bg" style="background-image: url(./img/bg-footer.png);">
+            <div class="container">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-xl-3 col-lg-3 col-md-5 col-sm-6">
+                        <div class="single-footer-caption mb-50">
+                            <div class="single-footer-caption mb-30">
+                                <!-- logo -->
+                                <div class="footer-logo">
+                                    <a href="index.html"><img src="../assets/img/logo/logo2_footer.png" alt=""></a>
+                                </div>
+                                <div class="footer-tittle">
+                                    <div class="footer-pera">
+                                        <p>Pilgrims Holidays takes pride in being your dedicated partner for
+                                            Travel and Visa Services, with a unique focus on spiritual journeys
+                                            .</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-3 col-sm-5">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>Quick Links</h4>
+                                <ul>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#"> Offers & Discounts</a></li>
+                                    <li><a href="#"> Get Coupon</a></li>
+                                    <li><a href="#"> Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-7">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>New Places</h4>
+                                <ul>
+                                    <li><a href="#">Pokhera</a></li>
+                                    <li><a href="#">Kathmandu</a></li>
+                                    <li><a href="#">Mustang</a></li>
+                                    <li><a href="#"> Chitwan</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-5 col-sm-7">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>Support</h4>
+                                <ul>
+                                    <li><a href="#">Frequently Asked Questions</a></li>
+                                    <li><a href="#">Terms & Conditions</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Report a Payment Issue</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer bottom -->
+                <div class="row pt-padding">
+                    <div class="col-xl-7 col-lg-7 col-md-7">
+                        <div class="footer-copy-right">
+                            <p>
+                                Copyright &copy;
+                                <script>document.write(new Date().getFullYear());</script> All rights reserved
+                                @pligrimsholidays
+                                | Developed by Santosh Gajurel
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-lg-5 col-md-5">
+                        <!-- social -->
+                        <div class="footer-social f-right">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fas fa-globe"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End-->
+    </footer>
+
+
 </body>
+
 </html>
