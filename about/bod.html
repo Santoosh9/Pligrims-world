@@ -29,6 +29,8 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
+<link rel="stylesheet" href="style.css">
+
     
     <style>
          .main{
@@ -54,6 +56,126 @@
         .button-like:hover {
             background-color: #0056b3;
         }
+
+        
+
+.gtco-testimonials {
+  position: relative;
+  margin-top: 30px;
+}
+
+.gtco-testimonials h2 {
+  font-size: 30px;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 50px;
+}
+
+.gtco-testimonials .owl-stage-outer {
+  padding: 30px 0;
+}
+
+.gtco-testimonials .owl-nav {
+  display: none;
+}
+
+.gtco-testimonials .owl-dots {
+  text-align: center;
+}
+
+.gtco-testimonials .owl-dots span {
+  position: relative;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: block;
+  background: #fff;
+  border: 2px solid #01b0f8;
+  margin: 0 5px;
+}
+
+.gtco-testimonials .owl-dots .active span {
+  background: #01b0f8;
+  height: 12px;
+  width: 12px;
+  margin-bottom: -1px;
+}
+
+.gtco-testimonials .card {
+  background: #fff;
+  box-shadow: 0 8px 30px -7px #c9dff0;
+  margin: 0 20px;
+  padding: 0 10px;
+  border-radius: 20px;
+  border: 0;
+}
+
+.gtco-testimonials .card .card-img-top {
+  max-width: 100px;
+  border-radius: 50%;
+  margin: 15px auto 0;
+  box-shadow: 0 8px 20px -4px #95abbb;
+  width: 100px;
+  height: 100px;
+}
+
+.gtco-testimonials .card h5 {
+  color: #01b0f8;
+  font-size: 21px;
+  line-height: 1.3;
+}
+
+.gtco-testimonials .card h5 span {
+  font-size: 18px;
+  color: #666666;
+}
+
+.gtco-testimonials .card p {
+  font-size: 18px;
+  color: #555;
+  padding-bottom: 15px;
+}
+
+.gtco-testimonials .active {
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+
+.gtco-testimonials .center {
+  opacity: 1;
+}
+
+.gtco-testimonials .center h5 {
+  font-size: 24px;
+}
+
+.gtco-testimonials .center h5 span {
+  font-size: 20px;
+}
+
+.gtco-testimonials .center .card-img-top {
+  max-width: 100%;
+  height: 120px;
+  width: 120px;
+}
+
+@media (max-width: 767px) {
+  .gtco-testimonials {
+    margin-top: 20px;
+  }
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev {
+  outline: 0;
+}
+
+.owl-carousel button.owl-dot {
+  outline: 0;
+}
+
+
+
     </style>
 
    
@@ -143,16 +265,70 @@
         </div>
     </header>
     
-<section class="board-carousel">
-    <div class="owl-carousel owl-theme">
-        <div class="item">
-            <img src="director1.jpg" alt="Director 1">
-            <h3>Director Name</h3>
-            <p>Director Description</p>
+
+
+
+
+
+    <div class="gtco-testimonials">
+        <h2>Board of Directors</h2>
+        <div class="owl-carousel owl-carousel1 owl-theme">
+            <div>
+                <div class="card text-center">
+                    <img class="card-img-top"
+                        src="../assets/img/team/5.png"
+                        alt="">
+                    <div class="card-body">
+                        <h5>Ram Badhur <br />
+                            <span> Project Manager </span>
+                        </h5>
+                        <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+                            impedit quo minus id quod maxime placeat ” </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card text-center"><img class="card-img-top"
+                        src="../assets/img/team/6.png"
+                        alt="">
+                    <div class="card-body">
+                        <h5>Hari Lal<br />
+                            <span> Engineer </span>
+                        </h5>
+                        <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+                            impedit quo minus id quod maxime placeat ” </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card text-center"><img class="card-img-top"
+                        src="../assets/img/team/7.png"
+                        alt="">
+                    <div class="card-body">
+                        <h5>Shyam Sharma<br />
+                            <span> Project Manager </span>
+                        </h5>
+                        <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+                            impedit quo minus id quod maxime placeat ” </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card text-center"><img class="card-img-top"
+                        src="../assets/img/team/8.png"
+                        alt="">
+                    <div class="card-body">
+                        <h5>Santoosh <br />
+                            <span> Software Developer </span>
+                        </h5>
+                        <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+                            impedit quo minus id quod maxime placeat ” </p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- Add more items for other directors -->
     </div>
-</section>
+
 
     <footer>
         <!-- Footer Start-->
@@ -276,36 +452,47 @@
     <!-- Jquery Plugins, main Jquery -->
     <script src="./assets/js/plugins.js"></script>
     <script src="./assets/js/main.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Include Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Your custom script for Owl Carousel initialization -->
+   
     <script>
-        $(document).ready(function () {
-                $(".owl-carousel").owlCarousel({
-                    loop: true,
-                    margin: 10,
-                    responsive: {
-                        0: {
-                            items: 1
-                        },
-                        600: {
-                            items: 2
-                        },
-                        1000: {
-                            items: 3
+        
+
+        (function () {
+                "use strict";
+
+                var carousels = function () {
+                    $(".owl-carousel1").owlCarousel({
+                        loop: true,
+                        center: true,
+                        margin: 0,
+                        responsiveClass: true,
+                        nav: false,
+                        responsive: {
+                            0: {
+                                items: 1,
+                                nav: false
+                            },
+                            680: {
+                                items: 2,
+                                nav: false,
+                                loop: false
+                            },
+                            1000: {
+                                items: 3,
+                                nav: true
+                            }
                         }
-                    }
-                });
-            });
+                    });
+                };
 
-    </script>
-    
-    <script>
-        function redirectToDestination() {
-            var selectElement = document.getElementById("select1");
-            var selectedValue = selectElement.options[selectElement.selectedIndex].value;
-            if (selectedValue !== "") {
-                window.location.href = selectedValue;
-            }
-        }
+                (function ($) {
+                    carousels();
+                })(jQuery);
+            })();
+
     </script>
 </body>
 </html>
