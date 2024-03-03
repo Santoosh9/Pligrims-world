@@ -50,6 +50,33 @@
         .button-like:hover {
             background-color: #0056b3;
         }
+
+         .container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Media query for tablets */
+        @media only screen and (max-width: 992px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .container > div {
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        /* Media query for mobile devices */
+        @media only screen and (max-width: 576px) {
+            .container {
+                padding: 10px;
+            }
+        }
     </style>
 
 
@@ -151,49 +178,82 @@
         </div>
     </header>
 
-<div style="display: flex; justify-content: space-between; " >
-
-<div style="padding-left: 20px;">
-<h2>hello</h2>
-    <div class="card mb-3">
-        <img src="../assets/img/team/12.png" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
-                This content is a little bit longer.</p>
-            
+<div class="container">
+    <!-- Left section -->
+    <div style="flex: 1;">
+        <h2>Domestic & International Packages</h2>
+        <div class="card mb-3">
+            <img src="../assets/img/team/12.png" class="card-img-top" alt="..." style="max-width: 100%; height: auto;">
+            <div class="card-body">
+                <p class="card-text" align="justify">In the travel and tourism sector, package holidays—also referred to
+                    as tour packages or just "tours"—are tours that are either guided by a tour guide or are not. A
+                    pre-planned, pre-paid vacation that includes two or more travel components, such as flight, airport
+                    transportation, lodging, and other services, is referred to as a tour package. It is more difficult
+                    to define the tour package notion practically than it is to comprehend it. "A total tourism product
+                    consisting of transportation from the market area to the destination, accommodation at the
+                    destination, and recreational activities promoted by the tourists" is how Holloway describes a tour
+                    package. "A tour package is an advertised journey with specific features, organized and promoted
+                    with tour literature by a tour operator," according to Gregorg.</p>
+            </div>
         </div>
     </div>
-   
+    <!-- Right section -->
+    <div style="flex: 1;">
+        <h2>Other Services</h2>
+        <ul class="list-group">
+            <li class="list-group-item" style="display: flex; gap: 10px;">
+                <img src="../assets/img/blog/blog_1.png" alt=""
+                    style="border-radius: 20%; width: 100px; height: 100px;">
+                <div>
+                    <a href="../blog.html">
+                        <h5>Domestic & International Air Ticketing</h5>
+                    </a>
+                    <p>We are the stockiest for all major domestic and in ...</p>
+                </div>
+            </li>
+
+            <li class="list-group-item" style="display: flex; gap: 10px;">
+                <img src="../assets/img/blog/blog_1.png" alt="" style="border-radius: 20%; width: 100px; height: 100px;">
+                <div>
+                    <a href="../blog.html">
+                        <h5>Domestic & International Hotel
+                        Booking</h5>
+                    </a>
+                    <p>For you and your visitors, we can provide the best ...</p>
+                </div>
+            </li>
+            <li class="list-group-item" style="display: flex; gap: 10px;">
+                <img src="../assets/img/blog/blog_1.png" alt="" style="border-radius: 20%; width: 100px; height: 100px;">
+                <div>
+                    <a href="../blog.html">
+                        <h5>Visa & Other Travel Services</h5>
+                    </a>
+                    <p>The majority of visitors might not be aware of the specifics.......</p>
+                </div>
+            </li>
+            <li class="list-group-item" style="display: flex; gap: 10px;">
+                <img src="../assets/img/blog/blog_1.png" alt="" style="border-radius: 20%; width: 100px; height: 100px;">
+                <div>
+                    <a href="../blog.html">
+                        <h5>Meeting/Conference/Incentives &
+                        Exhibitions</h5>
+                    </a>
+                    <p>Any kind of function can be accommodated by MICE tourism...</p>
+                </div>
+            </li>
+            <li class="list-group-item" style="display: flex; gap: 10px;">
+                <img src="../assets/img/blog/blog_1.png" alt="" style="border-radius: 20%; width: 100px; height: 100px;">
+                <div>
+                    <a href="../blog.html">
+                        <h5>Domestic & International Air Ticketing</h5>
+                    </a>
+                    <p>We are the stockiest for all major domestic and in ...</p>
+                </div>
+            </li>
+            
+        </ul>
+    </div>
 </div>
-<!-- .flex-direction: column; gap: 10px; -->
-<div style="padding-right: 20px;">
-    
-<ul class="list-group">
-    <li class="list-group-item" style="display: flex; gap: 10px;" > <img src="../assets/img/blog/blog_1.png" alt="" style="border-radius: 20%; width: 100px; height: 100px;"><br><a href="../blog.html"><h5>vieeeeeeeeeeeeeeeeeeeeeeeee</h5><p>hhhhhhhhhhhhhhhhhhhhhhhh</p></a></li>
-    <li class="list-group-item" style="display: flex; gap: 10px;"> <img src="../assets/img/blog/blog_1.png" alt=""
-            style="border-radius: 20%; width: 100px; height: 100px;"><br><a href="../blog.html">
-            <h5>vieeeeeeeeeeeeeeeeeeeeeeeee</h5>
-            <p>hhhhhhhhhhhhhhhhhhhhhhhh</p>
-        </a></li>
-        <li class="list-group-item" style="display: flex; gap: 10px;"> <img src="../assets/img/blog/blog_1.png" alt=""
-                style="border-radius: 20%; width: 100px; height: 100px;"><br><a href="../blog.html">
-                <h5>vieeeeeeeeeeeeeeeeeeeeeeeee</h5>
-                <p>hhhhhhhhhhhhhhhhhhhhhhhh</p>
-            </a></li>
-            <li class="list-group-item" style="display: flex; gap: 10px;"> <img src="../assets/img/blog/blog_1.png" alt=""
-                    style="border-radius: 20%; width: 100px; height: 100px;"><br><a href="../blog.html">
-                    <h5>vieeeeeeeeeeeeeeeeeeeeeeeee</h5>
-                    <p>hhhhhhhhhhhhhhhhhhhhhhhh</p>
-                </a></li>
-                <li class="list-group-item" style="display: flex; gap: 10px;"> <img src="../assets/img/blog/blog_1.png" alt=""
-                        style="border-radius: 20%; width: 100px; height: 100px;"><br><a href="../blog.html">
-                        <h5>vieeeeeeeeeeeeeeeeeeeeeeeee</h5>
-                        <p>hhhhhhhhhhhhhhhhhhhhhhhh</p>
-                    </a></li>
-</ul>
-</div>
-   </div>
 
     <footer>
         <!-- Footer Start-->
