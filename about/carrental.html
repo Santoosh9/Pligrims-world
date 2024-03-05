@@ -50,6 +50,33 @@
         .button-like:hover {
             background-color: #0056b3;
         }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Media query for tablets */
+        @media only screen and (max-width: 992px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .container>div {
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        /* Media query for mobile devices */
+        @media only screen and (max-width: 576px) {
+            .container {
+                padding: 10px;
+            }
+        }
     </style>
 
 
@@ -131,9 +158,9 @@
 
 
 
-                                            <span class="button-like" href="./layout//login.html"> Sign In</span>
+                                            <span class="button-like" href="./layout/login.html"> Sign In</span>
 
-                                            <span class="button-like" href="./layout//register.html"> Sign Up</span>
+                                            <span class="button-like" href="./layout/register.html"> Sign Up</span>
 
                                         </ul>
 
@@ -151,99 +178,92 @@
         </div>
     </header>
 
-    <section class="py-3 py-md-5">
-        <div class="main container ">
-
-            <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
-                <div style="display: flex;  ">
-                    <div class="col-12 col-lg-6 col-xl-7">
-                        <h2 style="color: red;">Company Informations</h2>
-                        <div class="row justify-content-xl-center">
-
-                            <div class="col-12 col-xl-11" style="text-align: justify">
-
-                                <h4 class="mb-3" style="font-family: Gill Sans, sans-serif">WELCOME TO PLIGRIMS HOLIDAYS
-                                </h4>
-                                <p style="font-family: Poppins, sans-serif; font-weight: 500; text-justify:newspaper;"
-                                    aline="justify">
-                                    Pilgrims Holidays takes pride in being your dedicated partner for
-                                    Travel and Visa Services, with a unique focus on spiritual journeys.
-                                    Our services are meticulously designed for individuals and groups
-                                    seeking seamless pilgrimage experiences. From efficient visa
-                                    processing to detailed travel arrangements, we prioritize your
-                                    safety, comfort, and the spiritual significance of your journey. With
-                                    a committed team and a reputation for excellence, Pilgrims
-                                    Holidays invites you to embark on a transformative pilgrimage,
-                                    where every detail is carefully curated for an enriching and hassle
-                                    free adventure.
-
-                            </div>
-
-
-                        </div>
-
-                    </div>
-                    <div class="row gy-4 gy-md-0 gx-xxl-5X"
-                        style=" flex-wrap: inherit; flex-wrap: wrap; align-items: center; justify-content: center;">
-                        <div class="col-12 col-lg-6 col-xl-5">
-                            <img class="img-fluid rounded" loading="lazy" src="../assets//img//login/register.png"
-                                alt="About 1">
-                        </div>
-
-                    </div>
-
-
+    <div class="container">
+        <!-- Left section -->
+        <div style="flex: 1;">
+            <h2>Domestic & International Packages</h2>
+            <div class="card mb-3">
+                <img src="../assets/img/team/12.png" class="card-img-top" alt="..."
+                    style="max-width: 100%; height: auto;">
+                <div class="card-body">
+                    <p class="card-text" align="justify">In the travel and tourism sector, package holidays—also
+                        referred to
+                        as tour packages or just "tours"—are tours that are either guided by a tour guide or are not. A
+                        pre-planned, pre-paid vacation that includes two or more travel components, such as flight,
+                        airport
+                        transportation, lodging, and other services, is referred to as a tour package. It is more
+                        difficult
+                        to define the tour package notion practically than it is to comprehend it. "A total tourism
+                        product
+                        consisting of transportation from the market area to the destination, accommodation at the
+                        destination, and recreational activities promoted by the tourists" is how Holloway describes a
+                        tour
+                        package. "A tour package is an advertised journey with specific features, organized and promoted
+                        with tour literature by a tour operator," according to Gregorg.</p>
                 </div>
-
-                <div class="col-12 col-md-6">
-                    <div class="d-flex">
-                        <div class="me-4 text-primary">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                                class="bi bi-gear-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
-                            </svg>
-                        </div>
-                        <div>
-
-                            <h2 class="h4 mb-3"><span style="color: red;">Mission</span><i
-                                    class="fa-thin fa-bullseye-arrow"></i></h2>
-                            <p class="text-secondary mb-0">Our mission is to provide transformative travel experiences
-                                that
-                                inspire, connect, and leave a positive impact. Through innovation,
-                                sustainability, and a passion for exploration, we aim to redefine the
-                                way people experience the world, fostering cultural understanding,
-                                wonder, and cherished memories for every traveller we serve.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6">
-                    <div class="d-flex">
-                        <div class="me-4 text-primary">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                                class="bi bi-fire " viewBox="0 0 16 16">
-                                <path
-                                    d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16Zm0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15Z" />
-                            </svg>
-                        </div>
-                        <div>
-                            <h2 class="h4 mb-3"><span style="color: red;">Vission</span><i
-                                    class="fa-thin fa-eye-low-vision"></i> </h2>
-                            <p class="text-secondary mb-0" style="text-decoration: solid; ">To be the premier global
-                                travel company,
-                                recognized for redefining
-                                travel experiences through innovation, sustainability, and a
-                                commitment to enriching lives. We aspire to inspire a world where
-                                every journey, be it for leisure or pilgrimage, becomes a
-                                transformative and cherished adventure, leaving an enduring
-                                positive impact on individuals and the communities we touch</p>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
-    </section>
+        <!-- Right section -->
+        <div style="flex: 1;">
+            <h2>Other Services</h2>
+            <ul class="list-group">
+                <li class="list-group-item" style="display: flex; gap: 10px;">
+                    <img src="../assets/img/blog/blog_1.png" alt=""
+                        style="border-radius: 20%; width: 100px; height: 100px;">
+                    <div>
+                        <a href="../blog.html">
+                            <h5>Domestic & International Air Ticketing</h5>
+                        </a>
+                        <p>We are the stockiest for all major domestic and in ...</p>
+                    </div>
+                </li>
+
+                <li class="list-group-item" style="display: flex; gap: 10px;">
+                    <img src="../assets/img/blog/blog_1.png" alt=""
+                        style="border-radius: 20%; width: 100px; height: 100px;">
+                    <div>
+                        <a href="../blog.html">
+                            <h5>Domestic & International Hotel
+                                Booking</h5>
+                        </a>
+                        <p>For you and your visitors, we can provide the best ...</p>
+                    </div>
+                </li>
+                <li class="list-group-item" style="display: flex; gap: 10px;">
+                    <img src="../assets/img/blog/blog_1.png" alt=""
+                        style="border-radius: 20%; width: 100px; height: 100px;">
+                    <div>
+                        <a href="../blog.html">
+                            <h5>Visa & Other Travel Services</h5>
+                        </a>
+                        <p>The majority of visitors might not be aware of the specifics.......</p>
+                    </div>
+                </li>
+                <li class="list-group-item" style="display: flex; gap: 10px;">
+                    <img src="../assets/img/blog/blog_1.png" alt=""
+                        style="border-radius: 20%; width: 100px; height: 100px;">
+                    <div>
+                        <a href="../blog.html">
+                            <h5>Meeting/Conference/Incentives &
+                                Exhibitions</h5>
+                        </a>
+                        <p>Any kind of function can be accommodated by MICE tourism...</p>
+                    </div>
+                </li>
+                <li class="list-group-item" style="display: flex; gap: 10px;">
+                    <img src="../assets/img/blog/blog_1.png" alt=""
+                        style="border-radius: 20%; width: 100px; height: 100px;">
+                    <div>
+                        <a href="../blog.html">
+                            <h5>Domestic & International Car Rental.</h5>
+                        </a>
+                        <p>We are the stockiest for all major domestic and in ...</p>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
 
     <footer>
         <!-- Footer Start-->
@@ -260,8 +280,7 @@
                                 <div class="footer-tittle">
                                     <div class="footer-pera">
                                         <p>Pilgrims Holidays takes pride in being your dedicated partner for
-                                            Travel and Visa Services, with a unique focus on spiritual journeys
-                                            .</p>
+                                            Travel and Visa Services, with a unique focus on spiritual journeys.</p>
                                     </div>
                                 </div>
                             </div>
@@ -369,15 +388,7 @@
     <script src="./assets/js/plugins.js"></script>
     <script src="./assets/js/main.js"></script>
 
-    <script>
-        function redirectToDestination() {
-            var selectElement = document.getElementById("select1");
-            var selectedValue = selectElement.options[selectElement.selectedIndex].value;
-            if (selectedValue !== "") {
-                window.location.href = selectedValue;
-            }
-        }
-    </script>
+
 </body>
 
 </html>
